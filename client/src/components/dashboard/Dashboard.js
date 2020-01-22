@@ -19,7 +19,9 @@ class Dashboard extends Component {
             <h4>
               <b>Hey there,</b> {user.name.split(" ")[0]}
               <p className="flow-text grey-text text-darken-1">
-                You Are Logged Into Process Performance Plus Knowledge Center {" "}
+                You Are Logged Into<br></br>
+                 Process Performance Plus Knowledge Center {" "}
+                <br></br>
                 <span style={{ fontFamily: "monospace" }}>PPP</span> app 👏
               </p>
             </h4>
