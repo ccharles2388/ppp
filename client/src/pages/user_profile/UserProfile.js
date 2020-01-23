@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import Navbar from "./src/components/navbar/NavBar";
 
 export default class UserProfile extends Component{
     constructor(props){
@@ -8,7 +9,9 @@ export default class UserProfile extends Component{
     }
     render() {
         return(
-        <div>UserProfile</div>)
+        <div>
+            <Navbar/>
+        </div>)
     } 
 
     
