@@ -16,6 +16,7 @@ class Navbar extends Component {
             >
               <i className="material-icons">code</i>
               PPP
+              Process Performance Plus
             </Link>
           </div>
         </nav>
