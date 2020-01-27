@@ -13,8 +13,12 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
+import Editprofile from "./pages/editprofile/Editprofile";
+import JobTasks from "./pages/jobtasks/JobTasks";
+import KnowledgeCenter from "./pages/knowledgecenter/KnowledgeCenter";
+import TrainingInfo from "./pages/traininginfo/TrainingInfo";
 import "./App.css";
-import UserProfile from "./pages/user_profile/UserProfile";
+import UserProfile from "./pages/userprofile/UserProfile";
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -45,9 +49,13 @@ class App extends Component {
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
-            <Route exact path="/user-profile" component={UserProfile} />
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute exact path="/userprofile" component={UserProfile} />
+              <PrivateRoute exact path="/editprofile" component={Editprofile} />
+              <PrivateRoute exact path="/jobtasks" component={JobTasks} />
+              <PrivateRoute exact path="/knowledgecenter" component={KnowledgeCenter} />
+              <PrivateRoute exact path="/traininginfo" component={TrainingInfo} />
             </Switch>
           </div>
         </Router>

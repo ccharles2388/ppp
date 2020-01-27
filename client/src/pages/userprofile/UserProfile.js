@@ -1,5 +1,9 @@
-import React,{Component} from "react";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { logoutUser } from "../../actions/authActions";
 import NavBar from "../../components/navbar/NavBar";
+
 class UserProfile extends Component {
     onLogoutClick = e => {
       e.preventDefault();

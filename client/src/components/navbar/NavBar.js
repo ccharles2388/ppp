@@ -11,7 +11,7 @@ export default class Navbar extends Component{
         return(
         <div className="navbar">
             <Link to="/dashboard"><button className="home">Home</button></Link>
-            <Link to="/user_profile"><button className="editprofile">User Profile</button></Link>
+            <Link to="/userprofile"><button className="userprofile">User Profile</button></Link>
             <Link to="/editprofile"><button className="editprofile">Edit User Profile</button></Link>
             <Link to="/jobtasks"><button className="jobtasks">Job Tasks</button></Link>
             <Link to="/traininginfo"><button className="traininginfo">Training</button></Link>
